@@ -3,6 +3,7 @@ allow platform_app sysfs_kgsl:dir search;
 allow platform_app camera_prop:file {open read getattr};
 allow platform_app sysfs_fps:file { getattr open read };
 allow platform_app sysfs:file { getattr open read };
+allow platform_app sysfs_graphics:file r_file_perms;
 
 # Face Unlock
 get_prop(platform_app, camera_prop)
