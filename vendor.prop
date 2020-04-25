@@ -87,6 +87,9 @@ persist.vendor.service.bdroid.sibs=false
 bluetooth.hfp.client=1
 vendor.qcom.bluetooth.soc=cherokee
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display post-processing
 ro.vendor.display.cabl=2
 
