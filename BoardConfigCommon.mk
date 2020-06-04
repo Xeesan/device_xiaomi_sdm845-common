@@ -8,6 +8,9 @@ BOARD_VENDOR := xiaomi
 
 COMMON_PATH := device/xiaomi/sdm845-common
 
+BUILD_BROKEN_DUP_RULES=true
+PRODUCT_VENDOR_MOVE_ENABLED := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -142,7 +145,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 VENDOR_SECURITY_PATCH := 2020-03-01
 
 # Sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/Android.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
