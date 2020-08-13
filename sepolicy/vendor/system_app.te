@@ -1,0 +1,7 @@
+ # Battery Health
+allow system_app sysfs_battery_supply:dir { search }; 
+allow system_app sysfs_battery_supply:file { read }; 
+allow system_app sysfs_battery_supply:file { open };
+allow system_app sysfs_battery_supply:file { getattr };
+allow system_app selinuxfs:file { open read };
+allow system_app system_data_file:dir { read };
