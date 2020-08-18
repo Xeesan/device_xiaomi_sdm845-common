@@ -415,4 +415,8 @@
 
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
+    <!-- Sets the package name for device parts-->
+    <string name="config_device_parts_package_name" translatable="false">org.lineageos.settings</string>
+    <string name="config_device_parts_package_activity" translatable="false">org.lineageos.settings.thermal.ThermalActivity</string>
 </resources>
