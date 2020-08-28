@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     libldacBT_enc \
+    libldacBT_dec \
     libldacBT_abr \
     libhdmiedid \
     libhfp \
