@@ -64,10 +64,8 @@
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title">
             <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineage.settings.device.DOZE_SETTINGS" />
             </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.display" />
         </activity>
 
         <activity
