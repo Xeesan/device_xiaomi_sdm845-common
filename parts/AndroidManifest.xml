@@ -29,7 +29,7 @@
 
     <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="24"/>
+        android:targetSdkVersion="31" />
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -37,7 +37,7 @@
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver" android:exported="true">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -62,7 +62,9 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title">
+            android:label="@string/ambient_display_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="org.lineage.settings.device.DOZE_SETTINGS" />
             </intent-filter>
@@ -70,7 +72,9 @@
 
         <activity
             android:name=".thermal.ThermalActivity"
-            android:label="@string/thermal_title">
+            android:label="@string/thermal_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
