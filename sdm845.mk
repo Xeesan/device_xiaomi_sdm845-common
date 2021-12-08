@@ -1,4 +1,4 @@
-#
+8#
 # Copyright (C) 2018-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -24,7 +24,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-syberia 
 
 # Permissions
 PRODUCT_COPY_FILES += \
