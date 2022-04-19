@@ -201,6 +201,7 @@ PRODUCT_PACKAGES += \
     gralloc.sdm845 \
     hwcomposer.sdm845 \
     libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
     libtinyxml \
     libtinyxml.vendor \
@@ -399,6 +400,7 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0.vendor \
     android.hardware.radio@1.0 \
     android.hardware.radio@1.0.vendor \
     android.hardware.radio@1.1 \
