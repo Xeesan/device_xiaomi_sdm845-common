@@ -18,6 +18,10 @@
     <!-- Ambient settings -->
     <string name="ambient_enable">Use ambient display</string>
 
+    <!-- Pick-up to wake gesture-->
+    <string name="wake_gesture_title">Wake up</string>
+    <string name="wake_gesture_summary">Wake up the device instead of pulsing notifications</string>
+
     <!-- Dirac settings -->
     <string name="dirac_enable">Enable dirac</string>
     <string name="dirac_title">Mi Sound Enhancer</string>
