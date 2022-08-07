@@ -41,7 +41,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_CLANG_VERSION := proton
   TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 endif
 
