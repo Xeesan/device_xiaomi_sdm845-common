@@ -444,6 +444,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
+    android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
 # Soong namespaces
