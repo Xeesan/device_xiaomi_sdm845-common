@@ -50,7 +50,6 @@ ro.fastbootd.available=true
 
 # Graphics
 debug.sf.enable_hwc_vds=0
-debug.hwui.use_buffer_age=false
 debug.sf.disable_client_composition_cache=1
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
