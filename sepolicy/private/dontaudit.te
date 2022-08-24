@@ -1,0 +1,37 @@
+dontaudit untrusted_app {
+  ashmem_device
+  cache_file
+  dalvikcache_data_file
+  mnt_sdcard_file
+  oem_unlock_prop
+  proc_net_tcp_udp
+  proc_zoneinfo
+  proc_version
+  proc_kmsg
+  proc_swaps
+  proc_keys
+  proc_tty_drivers
+  proc_loadavg
+  proc_pid_max
+  serialno_prop
+  }:{ chr_file lnk_file file } rw_file_perms;
+
+dontaudit system_app { 
+  system_suspend_control_service
+  tracingproxy_service
+}:service_manager find;
+
+dontaudit untrusted_app {
+  selinuxfs
+  sysfs_net
+}:file r_file_perms;
+
+dontaudit boringssl_self_test self:capability { kill sys_admin };
+dontaudit crash_dump self:capability { kill sys_admin };
+dontaudit fsck self:capability { kill sys_admin };
+dontaudit fsverity_init self:capability { kill sys_admin };
+dontaudit linkerconfig self:capability { kill sys_admin };
+dontaudit netutils_wrapper self:capability { kill sys_admin };
+dontaudit toolbox self:capability { kill sys_admin };
+dontaudit ueventd self:capability { kill sys_admin };
+dontaudit vdc self:capability { kill sys_admin };
