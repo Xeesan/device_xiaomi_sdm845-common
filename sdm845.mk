@@ -448,7 +448,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libjson \
     libjson.vendor \
-    librmnetctl
+    librmnetctl \
+    CarrierConfigOverlay
+
 
 # Recovery
 PRODUCT_PACKAGES += \
